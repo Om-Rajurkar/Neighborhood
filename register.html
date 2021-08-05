@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./register.css" />
+    <title>Neighborhood</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Log In
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>            
+        </div>
+       
+        <div class="social-icons">
+          <img src="./img/fb.png" />
+          <img src="./img/tw.png" />
+          <img src="./img/gp.png" />
+        </div>
+        <form id="login" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >Remember Password</span
+          >
+          <button type="submit" class="submit-btn">
+            <a href="./index.html"> Log in</a>
+          </button>
+        </form>
+
+        <form id="register" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email Id"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Confirm Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >I agree to the terms & conditions</span
+          >
+          <button type="submit" class="submit-btn">
+            <a href="./index.html">Register</a>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+
+      function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+      }
+    </script>
+
+    <!--
+    <div class="register">
+      <h1>Register Here!</h1>
+      <div class="form">
+        <div class="name-section">
+          <input type="text" name="name" autocomplete="off" required />
+          <label for="name" class="label-name">
+            <span class="content-name">Name</span>
+          </label>
+        </div>
+        <div class="email-section">
+          <input type="email" name="email" autocomplete="off" required />
+          <label for="email" class="label-email">
+            <span class="content-email">Email-ID</span>
+          </label>
+        </div>
+
+        <div class="contact-section">
+          <input type="text" name="contact" autocomplete="off" required />
+          <label for="contact" class="label-contact">
+            <span class="content-contact">Contact No.</span>
+          </label>
+        </div>
+
+        <div class="password-section">
+          <input type="password" name="password" autocomplete="off" required />
+          <label for="password" class="label-password">
+            <span class="content-password">password</span>
+          </label>
+        </div>
+
+        <div class="c-password-section">
+          <input
+            type="password"
+            name="c-password"
+            autocomplete="off"
+            required
+          />
+          <label for="password" class="label-c-password">
+            <span class="content-c-password">password</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    -->
+  </body>
+</html>

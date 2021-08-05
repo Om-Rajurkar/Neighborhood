@@ -1,0 +1,813 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-family: "Poppins";
+}
+
+header {
+  display: flex;
+  margin: auto;
+  height: 15vh;
+  align-items: center;
+  background-color: #28a745;
+  opacity: 0.8;
+}
+
+.logo-container,
+.logo-img,
+.nav-links {
+  display: flex;
+}
+
+.logo {
+  margin-top: 25px;
+}
+
+.logo-container {
+  flex: 2;
+}
+
+.logo-img {
+  margin-left: 50px;
+  width: 75px;
+  height: 75px;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px;
+  padding-top: 20px;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: #28a745;
+  border: 2px solid #28a745;
+  border-radius: 5px;
+}
+
+nav {
+  flex: 1;
+}
+
+.introduction {
+  background-image: url(./img/bg_introduction.jpeg);
+  background-size: cover;
+  color: white;
+  padding-bottom: 50px;
+  height: 100vh;
+}
+
+.intro-text {
+  margin-left: 100px;
+  margin-right: 800px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 26px;
+  padding-top: 100px;
+}
+
+.services {
+  padding-left: 50px;
+  padding-bottom: 75px;
+  padding-right: 50px;
+  padding-top: 75px;
+  justify-content: space-around;
+  display: flex;
+}
+
+.grocery-cart {
+  position: absolute;
+  top: 112vh;
+  left: 210px;
+  height: 70px;
+  width: 70px;
+}
+
+.grocery {
+  flex: 1;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.grocery-title {
+  padding-bottom: 15px;
+}
+
+.grocery > p {
+  color: grey;
+}
+
+.grocery > p > a {
+  color: green;
+  text-decoration: none;
+}
+
+.medicine-cart {
+  position: absolute;
+  top: 112vh;
+  left: 61%;
+  height: 65px;
+  width: 70px;
+}
+
+.medicines {
+  flex: 1;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.medicines-title {
+  padding-bottom: 15px;
+}
+
+.medicines > p {
+  color: grey;
+}
+
+.medicines > p > a {
+  color: green;
+  text-decoration: none;
+}
+
+.img-fluid {
+  margin-top: 5px;
+  margin-right: 200px;
+  border: 10px solid white;
+  z-index: 1;
+}
+
+.featured-pages {
+  margin-top: 50px;
+  margin-left: 300px;
+  margin-right: 100px;
+  color: white;
+  z-index: 1;
+}
+
+.featured-pages > h1 {
+  margin-bottom: 50px;
+}
+
+.featured-section {
+  display: flex;
+}
+
+/*
+.overlay-color {
+  width: 100%;
+  height: 100%;
+  background: darkgreen;
+  opacity: 0.7;
+  z-index: -1;
+}
+*/
+
+.featured-donate,
+.featured-section {
+  padding: 4em 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.featured-donate img,
+.featured-section img {
+  border: 10px solid #fff;
+}
+.featured-donate h2,
+.featured-section h2 {
+  color: #fff;
+}
+.featured-donate p,
+.featured-section p {
+  color: #fff;
+}
+.featured-donate .featured-text,
+.featured-section .featured-text {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.featured-donate .donation-time,
+.featured-section .donation-time {
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  font-style: italic;
+  font-size: 15px;
+}
+.featured-donate .fund-raised,
+.featured-section .fund-raised {
+  font-weight: 900;
+  color: #fff;
+}
+.featured-donate.overlay-color,
+.featured-donate.overlay-color-2,
+.featured-section.overlay-color,
+.featured-section.overlay-color-2 {
+  position: relative;
+}
+.featured-donate.overlay-color:before,
+.featured-donate.overlay-color-2:before,
+.featured-section.overlay-color:before,
+.featured-section.overlay-color-2:before {
+  position: absolute;
+  content: "";
+  background: #28a745;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+}
+.featured-donate.overlay-color-2:before,
+.featured-section.overlay-color-2:before {
+  background: #28a745;
+}
+
+.featured-img {
+  z-index: 1;
+}
+
+.donate {
+  padding-left: 50px;
+  padding-bottom: 75px;
+  padding-right: 50px;
+  padding-top: 75px;
+  justify-content: space-around;
+  display: flex;
+}
+
+.necessity-cart {
+  position: absolute;
+  top: 240vh;
+  left: 210px;
+  height: 70px;
+  width: 70px;
+}
+
+.necessity {
+  flex: 1;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.necessity-title {
+  padding-bottom: 15px;
+}
+
+.necessity > p {
+  color: grey;
+}
+
+.necessity > p > a {
+  color: green;
+  text-decoration: none;
+}
+
+.fund-cart {
+  position: absolute;
+  top: 240vh;
+  left: 61%;
+  height: 65px;
+  width: 70px;
+}
+
+.fund {
+  flex: 1;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.fund-title {
+  padding-bottom: 15px;
+}
+
+.fund > p {
+  color: grey;
+}
+
+.fund > p > a {
+  color: green;
+  text-decoration: none;
+}
+
+b {
+  color: black;
+}
+
+.donated {
+  background: linear-gradient(to top, white, #42635c);
+}
+
+.latest-donation {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.names {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.Person1,
+.Person2,
+.Person3,
+.Person4 {
+  height: 150px;
+  width: 250px;
+}
+
+.featured-pages1 {
+  margin-top: 50px;
+  margin-right: 300px;
+  margin-left: 100px;
+  color: white;
+  z-index: 1;
+}
+
+.featured-pages1 > h1 {
+  margin-bottom: 50px;
+}
+
+.img-fluid1 {
+  margin-top: 5px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  border: 10px solid white;
+  height: 400px;
+}
+
+.featured-donate-img {
+  z-index: 1;
+}
+
+.footer {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.About-Us {
+  flex: 1;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 25px;
+}
+
+.Our-Mission {
+  flex: 1;
+  margin-top: 50px;
+  margin-left: 25px;
+  margin-right: 50px;
+}
+
+.Contact {
+  flex: 1;
+  margin-top: 50px;
+  margin-left: 25px;
+  margin-right: 50px;
+}
+
+.address,
+.Phone-No,
+.email-id,
+.time {
+  display: flex;
+}
+
+.map-marker,
+.phone,
+.envelope,
+.clock-o {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.copyright {
+  background: #404040;
+  color: white;
+  padding-top: 25px;
+  padding-left: 500px;
+  padding-right: 500px;
+  padding-bottom: 25px;
+}
+
+.nav-link-contact {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.nav-link-contact:hover {
+  background-color: white;
+  color: #28a745;
+  border: 2px solid #28a745;
+  border-radius: 5px;
+}
+
+.intro-text-contact {
+  padding-left: 650px;
+  padding-top: 250px;
+  font-size: 32px;
+}
+
+.contact-middle {
+  padding-top: 50px;
+  padding-left: 200px;
+  padding-bottom: 50px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group > textarea {
+  font-size: 20px;
+}
+
+.px-3 {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.py-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.form-control {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.form-control:focus {
+  border-color: #000;
+}
+
+button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+  color: white;
+  background-color: #28a745;
+  opacity: 0.5;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: white;
+  color: #28a745;
+  border: 2px solid #28a745;
+  opacity: 0.5;
+  border-radius: 5px;
+}
+
+.middle {
+  display: flex;
+}
+
+.map {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.footer-2 {
+  background: linear-gradient(to top, white, #42635c);
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.introduction-contact {
+  background-image: url(./img/bg_contact.webp);
+  background-size: cover;
+  color: white;
+  padding-bottom: 50px;
+  height: 100vh;
+}
+
+/*
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+.modal {
+  background-color: white;
+  color: black;
+  width: 30%;
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 20px;
+  color: white;
+  background-color: #28a745;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.modal-btn:hover {
+  background-color: white;
+  color: #28a745;
+  border: 2px solid #28a745;
+  opacity: 1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+*/
+
+.middle-services {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.middle-left {
+  background-image: url(./img/grocery.jpg);
+  color: white;
+  margin-left: 250px;
+  margin-right: 125px;
+  border-radius: 25px;
+}
+
+.middle-left > h2 {
+  background-color: #28a745;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding-left: 80px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.middle-left > p {
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.middle-right {
+  background-image: url(./img/medicines4.jpg);
+  color: white;
+  margin-right: 250px;
+  margin-left: 125px;
+  border-radius: 25px;
+}
+
+.middle-right > h2 {
+  background-color: #28a745;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.middle-right > p {
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.services-link {
+  color: white;
+  text-decoration: none;
+}
+
+.services-link:hover {
+  background-color: white;
+  color: #28a745;
+  border: 2px solid #28a745;
+  border-radius: 5px;
+}
+
+.middle-l {
+  background-image: url(./img/necessity1.jpg);
+  background-size: cover;
+  color: white;
+  margin-left: 250px;
+  margin-right: 125px;
+  border-radius: 25px;
+}
+
+.middle-l > h2 {
+  background-color: #28a745;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding-left: 80px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.middle-l > p {
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+}
+
+.middle-r {
+  background-image: url(./img/donate1.webp);
+  color: white;
+  margin-right: 250px;
+  margin-left: 125px;
+  border-radius: 25px;
+}
+
+.middle-r > h2 {
+  background-color: #28a745;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.middle-r > p {
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.card-div {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.card-div-2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.card-container {
+  margin: 50px;
+  width: 200px;
+  height: 300px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.card-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card .front {
+  background: rgb(124, 91, 214);
+  color: white;
+  text-align: center;
+}
+
+.card .back {
+  background: #28a745;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card-button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+  color: white;
+  background-color: #28a745;
+  opacity: 0.9;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.card-button:hover {
+  background-color: white;
+  color: #28a745;
+  border: 2px solid #28a745;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+button > a {
+  text-decoration: none;
+  color: #404040;
+}
+
+.necessity-intro {
+  background-image: url(./img/necessity-donate.jpg);
+  background-size: cover;
+  color: white;
+  padding-bottom: 50px;
+  height: 100vh;
+}
+
+.thank-text {
+  margin-left: 100px;
+  margin-right: 800px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 26px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.fund-text {
+  margin-left: 100px;
+  margin-right: 300px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 26px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.fund-link > a {
+  text-decoration: none;
+}
+
+.fund-link {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  padding-top: 20px;
+  margin-right: 880px;
+}
+
+.fund-link:hover {
+  background-color: white;
+  color: #28a745;
+  border: 2px solid #28a745;
+  border-radius: 5px;
+}
